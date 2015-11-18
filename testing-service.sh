@@ -5,7 +5,7 @@ COL_RESET="\x1b[39;49;00m"
 
 echo -e $COL_BLUE"1. Checking connection to webserver on virtual machine endpoint: "$COL_RESET
 echo ""
-wget -q --spider http://ec2-52-30-48-90.eu-west-1.compute.amazonaws.com:8080/containers
+wget -q --spider http://ec2-52-30-39-38.eu-west-1.compute.amazonaws.com:8080/containers
 if [ $? -eq 0 ]; then
     echo "Server is Running"
 
