@@ -118,7 +118,7 @@ if [ $? -eq 0 ]; then
    
     echo ""
     echo "Creation of an image for next exercise"
-    curl -H 'Accept: application/json' -F file=@./TestApp/SimpleApp/Dockerfile http://ec2-52-30-39-38.eu-west-1.compute.amazonaws.com:8080/images
+    curl -H 'Accept: application/json' -F file=@./TestingArea/Dockerfile http://ec2-52-30-39-38.eu-west-1.compute.amazonaws.com:8080/images
 
     echo -e $COL_BLUE"14. Tag an image: "$COL_RESET
     echo -e $COL_BLUE" Type the id of it: "$COL_RESET
@@ -132,9 +132,9 @@ if [ $? -eq 0 ]; then
 
     echo ""
 
-    echo -e $COL_BLUE"15. Creating a image from a local file (./TestApp/SimpleApp/Dockerfile): "$COL_RESET
+    echo -e $COL_BLUE"15. Creating a image from a local file (./TestingArea/Dockerfile): "$COL_RESET
     read
-    curl -H 'Accept: application/json' -F file=@./TestApp/SimpleApp/Dockerfile http://ec2-52-30-39-38.eu-west-1.compute.amazonaws.com:8080/images
+    curl -H 'Accept: application/json' -F file=@./TestingArea/Dockerfile http://ec2-52-30-39-38.eu-west-1.compute.amazonaws.com:8080/images
 
     ##########################################################
 else
